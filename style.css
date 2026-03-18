@@ -1,0 +1,87 @@
+body {
+    background: #a8e6cf; /* 清爽的绿色背景 */
+    font-family: "Microsoft YaHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.pet-screen {
+    background: #f7f9fc;
+    border: 5px solid #34495e;
+    border-radius: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+#pet-emoji {
+    font-size: 60px;
+    transition: all 0.3s;
+}
+
+#pet-speech {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    font-size: 18px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #ff8c94;
+    color: white;
+    transition: transform 0.1s;
+}
+
+.btn:active { transform: scale(0.95); }
+.btn:disabled { background: #ccc; cursor: not-allowed; }
+
+/* 动画：呼吸效果 */
+.bouncing {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
